@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.topbar {
+  width: 100%;
+  height: 125px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "logob navb";
+  margin: 0 auto;
+  background-color: #BFF2EC;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.logobox {
+  grid-area: logob;
+  position:relative;
+}
+
+#logo {
+  background-image: url("../images/perslogosvg.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin: 12px;
+  margin-left: 60px;
+}
+
+.navbar {
+  grid-area: navb;
+  position: relative;
+}
+
+.navbar ul {
+    width: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}
+
+.navbar ul li {
+  display: inline-block;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 20px;
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+.center {
+  height: 850px;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.footbar {
+  width: 100%;
+  height: 115px;
+  margin: 0 auto;
+  background-color: #BFF2EC;
+  border-top: 1px solid black;
+  position: relative;
+}
+
+.smicons {
+
+}
+
+.cpyrt {
+  
+}
