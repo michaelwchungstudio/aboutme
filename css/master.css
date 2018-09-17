@@ -159,20 +159,31 @@ body {
 }
 
 /*CENTER OF PORTFOLIO*/
+.centerheader {
+  backgound-color: #BFF2EC;
+  font-family: "FuturaStd";
+  font-weight: 400;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
 .gallery{
   display: flex;
   flex-wrap: wrap;
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
 
 .gallcolumn {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 10px;
+  flex: 33%;
+  max-width: 30%;
+  padding: 0 20px;
 }
 
 .gallcolumn img {
+  box-sizing: border-box;
   margin-top: 20px;
   vertical-align: middle;
 }
@@ -217,3 +228,5 @@ body {
   font-size: 14px;
   letter-spacing: 0.5px;
 }
+
+/*MOBILE RESPONSIVE*/
