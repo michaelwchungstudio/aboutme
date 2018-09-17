@@ -68,7 +68,7 @@ body {
     position: absolute;
     bottom: 10px;
     right: 50px;
-}
+  }
 
 .navbar ul li {
   float: left;
@@ -79,7 +79,7 @@ body {
 .navbar ul li a:link, a:visited {
   font-family: "FuturaStd";
   font-weight: 100;
-  font-size: 18px;
+  font-size: 17px;
   color: black;
   letter-spacing: 5px;
   text-decoration: none;
@@ -116,6 +116,7 @@ body {
   justify-content: center;
   border: 2px solid pink;
   overflow: auto; */
+  position: relative;
 }
 
 .righthc {
@@ -127,6 +128,14 @@ body {
   justify-content: center;
   overflow: auto; */
   padding: 10% 0;
+  position: relative;
+}
+
+.vcentertest {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #heroimg {
@@ -202,6 +211,62 @@ body {
   border: 1px solid lightgrey;
 }
 
+/*ABOUTMECENTER*/
+.abcolumn {
+  background-color: #ECECEC;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "FuturaStd";
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.tblank {
+  grid-area: tblank;
+  color: #ECECEC;
+}
+
+.lblank {
+  grid-area: lblank;
+}
+
+.rblank {
+  grid-area: rblank;
+}
+
+.propic {
+  grid-area: propic;
+}
+
+.details {
+  grid-area: details;
+}
+
+.artstate {
+  grid-area: artstate;
+}
+
+.bblank {
+  grid-area: bblank;
+  color: #ECECEC;
+}
+
+.abwrapper {
+  min-height: 750px;
+  display: grid;
+  background-color: #ECECEC;
+  grid-template-columns: 10% 26.6% 26.6% 26.6% 10%;
+  grid-template-areas:
+    "tblank tblank tblank tblank tblank"
+    "lblank propic details artstate rblank"
+    "bblank bblank bblank bblank bblank";
+}
+
+#propic {
+  background-image: url("../images/heroimg.png");
+  width: 500px;
+}
+
 /*FOOTER*/
 .footbar {
   width: 100%;
@@ -273,6 +338,16 @@ body {
     flex: 100%;
     max-width: 100%;
   }
+
+  .abwrapper {
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas:
+      "tblank tblank tblank"
+      "lblank propic rblank"
+      "lblank details rblank"
+      "lblank artstate rblank"
+      "bblank bblank bblank";
+  }
 }
 
 /*TABLET*/
@@ -314,5 +389,25 @@ body {
     flex: 50%;
     max-width: 50%;
     padding: 0 5px;
+  }
+
+.abwrapper {
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-areas:
+    "tblank tblank tblank tblank"
+    "lblank propic artstate rblank"
+    "lblank details artstate rblank"
+    "bblank bblank bblank bblank";
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1285px) {
+  .abwrapper {
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas:
+      "tblank tblank tblank tblank"
+      "lblank propic artstate rblank"
+      "lblank details artstate rblank"
+      "bblank bblank bblank bblank";
   }
 }
